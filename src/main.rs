@@ -5,7 +5,7 @@ use youdao_rs::{opt::get_opt, run};
 async fn main() {
     let opt = get_opt();
 
-    // println!("{:#?}", opt);
+    println!("{:#?}", opt);
 
     if let Err(e) = run(opt).await {
         eprintln!("Application error: {}", e);
